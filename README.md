@@ -1,3 +1,6 @@
+## 更新记录
+2019-8-23 增加了地区的三级联动选择功能，可以访问JSP页面查看，但并没有加入到用户信息中。
+
 ## 信息管理系统开发文档
 
 **技术需求**
@@ -22,7 +25,9 @@ Servlet+jsp+mvc+jdbc
 表名:t_user
 
 **表设计**
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190822204942928.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NpbmF0XzQyNDgzMzQx,size_1,color_FFFFFF,t_70)
+
 ## 代码规范
 **命名规范**
 包名:com.bjsxt.*
