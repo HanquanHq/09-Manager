@@ -9,27 +9,6 @@
 <title>无标题文档</title>
 <link href="/09-Manager/css/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/09-Manager/js/jquery.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-  $(".click").click(function(){
-  $(".tip").fadeIn(200);
-  });
-  
-  $(".tiptop a").click(function(){
-  $(".tip").fadeOut(200);
-});
-
-  $(".sure").click(function(){
-  $(".tip").fadeOut(100);
-});
-
-  $(".cancel").click(function(){
-  $(".tip").fadeOut(100);
-});
-
-});
-</script>
-
 
 </head>
 <body>
@@ -67,6 +46,5 @@ $(document).ready(function(){
 	</script>
 
 </body>
-
 </html>
     

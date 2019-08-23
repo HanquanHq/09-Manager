@@ -29,4 +29,24 @@
     <servlet-name>UserServlet</servlet-name>
     <url-pattern>/UserServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CheckUnique</display-name>
+    <servlet-name>CheckUnique</servlet-name>
+    <servlet-class>cn.hanquan.servlet.CheckUnique</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckUnique</servlet-name>
+    <url-pattern>/CheckUnique</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LocateServlet</display-name>
+    <servlet-name>LocateServlet</servlet-name>
+    <servlet-class>cn.hanquan.servlet.LocateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LocateServlet</servlet-name>
+    <url-pattern>/LocateServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
