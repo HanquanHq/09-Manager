@@ -40,6 +40,8 @@ public class LocateServlet extends HttpServlet {
 		List<Pcd> list = us.getAreaInfo(pid);
 
 		// 设置响应
-		resp.getWriter().write(new Gson().toJson(list));
+		String json = new Gson().toJson(list);
+		logger.debug(json);
+		resp.getWriter().write(json);
 	}
 }

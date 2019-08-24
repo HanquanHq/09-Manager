@@ -3,6 +3,8 @@
 
 详细介绍：https://blog.csdn.net/sinat_42483341/article/details/100043927
 
+2019-8-24 使用了EL表达式，JSTL
+
 ## 信息管理系统开发文档
 
 **技术需求**
