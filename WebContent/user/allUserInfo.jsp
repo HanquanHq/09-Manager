@@ -3,6 +3,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -47,16 +48,20 @@
 		       <td>${oneUser.sex}</td>
 		       <td>${oneUser.age}</td>
 		       <td>${oneUser.birth}</td>
-	        </tr>      
-        </tr>      
+	        </tr>            
 		</c:forEach>
         </tbody>
     </table>
     </div>
     
-    <script type="text/javascript">
-	$('.tablelist tbody tr:odd').addClass('odd');
-	</script>
+    <%-- JSTL显示时间 --%>
+    <div class="rightinfo">
+	    <c:set var="now" value="<%=new java.util.Date()%>" />
+	    <p>数据更新时间: <fmt:formatDate type="both" dateStyle="long" timeStyle="long" value="${now}" /></p>
+	    <script type="text/javascript">
+			$('.tablelist tbody tr:odd').addClass('odd');
+		</script>
+	</div>
 
 </body>
 

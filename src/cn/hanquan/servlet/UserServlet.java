@@ -32,8 +32,8 @@ public class UserServlet extends HttpServlet {
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 		// 设置请求、响应编码格式
-		req.setCharacterEncoding("utf-8");
-		resp.setContentType("text/html;charset=utf-8");
+//		req.setCharacterEncoding("utf-8");
+//		resp.setContentType("text/html;charset=utf-8");
 
 		// 获取操作
 		String oper = req.getParameter("oper");

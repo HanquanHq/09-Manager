@@ -27,9 +27,9 @@ public class LocateServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// 设置编码及相应字符集
-		req.setCharacterEncoding("utf-8");
-		resp.setCharacterEncoding("utf-8");
-		resp.setContentType("text/html;charset=utf-8");
+//		req.setCharacterEncoding("utf-8");
+//		resp.setCharacterEncoding("utf-8");
+//		resp.setContentType("text/html;charset=utf-8");
 
 		// 获取请求
 		String pid = req.getParameter("pid");
