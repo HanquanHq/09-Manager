@@ -35,6 +35,7 @@
 	    <!-- 用户名 -->
 	    <div class="user">
 	    <span><%=((User)session.getAttribute("user")).getUname()%></span>
+	    <span>在线人数：${applicationScope.onlineNum}</span>
 	    </div>    
     </div>
 

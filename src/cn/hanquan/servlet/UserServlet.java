@@ -104,6 +104,7 @@ public class UserServlet extends HttpServlet {
 	private void userOut(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		HttpSession hs = req.getSession();
 		hs.invalidate();
+		logger.debug("session销毁");
 		resp.sendRedirect("/09-Manager/login.jsp");
 		logger.debug("用户退出登录");
 	}
@@ -118,7 +119,7 @@ public class UserServlet extends HttpServlet {
 	 */
 	private void userReg(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		User u = new User();
-		
+
 		// 获取请求
 		String _uname = req.getParameter("uname");
 		String _pwd = req.getParameter("pwd");
@@ -128,7 +129,7 @@ public class UserServlet extends HttpServlet {
 		logger.debug("_birth：" + _birth);
 
 		// 日期转换
-		if((!_birth.equals(null))&&_birth!="") {
+		if ((!_birth.equals(null)) && _birth != "") {
 			DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
 			java.util.Date utilBirth = null;
 			try {

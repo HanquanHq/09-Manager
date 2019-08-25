@@ -9,7 +9,6 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
   <servlet>
     <description>登录验证</description>
     <display-name>LoginServlet</display-name>
@@ -20,7 +19,6 @@
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/LoginServlet</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <description>用户操作</description>
     <display-name>UserServlet</display-name>
@@ -31,7 +29,6 @@
     <servlet-name>UserServlet</servlet-name>
     <url-pattern>/UserServlet</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <description>验证用户名是否重复</description>
     <display-name>CheckUnique</display-name>
@@ -42,7 +39,6 @@
     <servlet-name>CheckUnique</servlet-name>
     <url-pattern>/CheckUnique</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <description>地区三级联动</description>
     <display-name>LocateServlet</display-name>
@@ -53,9 +49,6 @@
     <servlet-name>LocateServlet</servlet-name>
     <url-pattern>/LocateServlet</url-pattern>
   </servlet-mapping>
-  
-  
-  
   <filter>
     <display-name>MyFilter</display-name>
     <filter-name>MyFilter</filter-name>
@@ -65,4 +58,7 @@
     <filter-name>MyFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+  <listener>
+    <listener-class>cn.hanquan.listener.OnlineNum</listener-class>
+  </listener>
 </web-app>
